@@ -1,0 +1,9 @@
+{
+  "message_id": "repurpose",
+  "scaling": "never",
+  "exhaustion": 0.1,
+  "bypasses_armor": true,
+  "bypasses_invulnerability": true,
+  "bypasses_effects": true,
+  "damage_is_absolute": true
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "charterlite:item/particle_spawn_item"
+  }
+}

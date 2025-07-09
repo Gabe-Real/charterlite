@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "dev.gabereal.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"ExampleClientMixin",
+		"ItemRendererAccessor",
+		"ModelLoaderMixin",
+		"ItemRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "charterlite",
+	"version": "${version}",
+	"name": "Charterlite",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Gabe_Real: Developer/Owner"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/charterlite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.gabereal.Charterlite"
+		],
+		"client": [
+			"dev.gabereal.CharterliteClient"
+		]
+	},
+	"mixins": [
+		"charterlite.mixins.json",
+		{
+			"config": "charterlite.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"aaa_particles": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

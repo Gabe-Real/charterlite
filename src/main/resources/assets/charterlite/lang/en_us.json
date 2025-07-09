@@ -1,0 +1,9 @@
+{
+  "item.charterlite.lesser_divinity": "§eLesser Divinity§e",
+  "item.charterlite.dusks_epitaph_small": "§eDusk's Epitaph§e",
+  "item.charterlite.particle_spawn_item": "Le dump-trucker",
+
+  "sounds.charterlite.lesser_divinity_strike": "Someone's resistance was repurposed",
+
+  "death.attack.repurpose": "%1$s's existence was repurposed."
+}
