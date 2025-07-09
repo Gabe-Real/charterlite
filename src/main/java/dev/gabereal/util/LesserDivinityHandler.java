@@ -134,7 +134,6 @@ public class LesserDivinityHandler {
 				// Kill with custom damage source
 				target.damage(ModDamageTypes.repurpose(serverWorld), Float.MAX_VALUE); // or a large value like 9999f
 
-				// Example: Play the same sound again
 				// serverWorld.playSound(null, target.getBlockPos(), ModSounds.LESSER_DIVINITY_STRIKE, SoundCategory.PLAYERS, 10.0f, 1.0f);
 
 				// # Explosion
@@ -142,7 +141,6 @@ public class LesserDivinityHandler {
 				// serverWorld.createExplosion(null, pos.x, pos.y, pos.z, 6.0f, true, World.ExplosionSourceType.TNT);
 				// serverWorld.createExplosion(null, pos.x, pos.y, pos.z, 6.0f, true, World.ExplosionSourceType.TNT);
 
-				// Spawn a big particle effect (use glow or flash)
 				serverWorld.spawnParticles(ParticleTypes.SOUL_FIRE_FLAME, pos.x, pos.y + 1, pos.z, 100, 1, 1, 1, 0.5);
 			});
 		}
