@@ -34,6 +34,16 @@ repositories {
 		}
 	}
 
+	// GeckoLib
+	maven {
+		name = 'GeckoLib'
+		url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+		content {
+			includeGroupByRegex("software\\.bernie.*")
+			includeGroup("com.eliotlash.mclib")
+		}
+	}
+
 	// Required for lodestone
 	maven {url = 'https://maven.blamejared.com/' }
 	maven {url = "https://mvn.devos.one/releases/" }
@@ -71,16 +81,18 @@ dependencies {
 
 	// Lodstone
 	modImplementation("team.lodestar.lodestone:lodestone:${project.lodestone_version}")
-	//For this you also need the following
 	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
 	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
 	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-world:${project.cca_version}")
-
 	modImplementation("dev.emi:trinkets:${project.trinkets_version}")
 	for (String module in port_lib_modules.split(",")) {
 		modImplementation("io.github.fabricators_of_create.Porting-Lib:$module:$port_lib_version")
 	}
 	modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.rea_version}")
+
+	// GeckoLib
+	modImplementation("software.bernie.geckolib:geckolib-fabric-1.20.1:${geckolib_version}")
+	implementation("com.eliotlash.mclib:mclib:20")
 }
 
 processResources {
